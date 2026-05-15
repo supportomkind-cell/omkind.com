@@ -1,64 +1,161 @@
-export default function OMKindWebsite() {
+export default function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white text-gray-800">
+    <div
+      style={{
+        backgroundColor: '#f8f4ec',
+        color: '#1f1f1f',
+        fontFamily: 'Georgia, serif',
+        minHeight: '100vh',
+      }}
+    >
       {/* HERO SECTION */}
-      <section className="px-6 py-16 md:px-20 text-center">
-        <div className="max-w-5xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-amber-700">
-            OM KIND
-          </h1>
-          <p className="mt-4 text-xl md:text-2xl font-medium text-gray-700">
-            Premium Ayurvedic Wellness Formula
-          </p>
+      <section
+        style={{
+          padding: '90px 20px',
+          textAlign: 'center',
+          background:
+            'linear-gradient(to bottom, #f8f4ec, #efe3cf)',
+          borderBottom: '1px solid #d6c3a5',
+        }}
+      >
+        <p
+          style={{
+            letterSpacing: '4px',
+            color: '#8b6b3f',
+            fontSize: '14px',
+          }}
+        >
+          PREMIUM AYURVEDIC WELLNESS
+        </p>
 
-          <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-            Traditional wellness blend crafted with powerful herbal ingredients
-            to support strength, stamina, workout performance, and daily energy.
-          </p>
+        <h1
+          style={{
+            fontSize: '78px',
+            margin: '20px 0',
+            color: '#2f2417',
+            fontWeight: 'bold',
+          }}
+        >
+          OM KIND
+        </h1>
 
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-amber-700 hover:bg-amber-800 text-white px-8 py-4 rounded-2xl text-lg shadow-lg transition">
-              Order Now
-            </button>
+        <p
+          style={{
+            maxWidth: '850px',
+            margin: 'auto',
+            fontSize: '20px',
+            lineHeight: '1.9',
+            color: '#5a4c3b',
+          }}
+        >
+          Crafted with timeless Ayurvedic traditions and refined herbal
+          wellness philosophy to support strength, vitality, recovery,
+          performance, and premium daily wellness.
+        </p>
 
-            <button className="border border-amber-700 text-amber-700 px-8 py-4 rounded-2xl text-lg hover:bg-amber-50 transition">
-              Learn More
-            </button>
-          </div>
-        </div>
+        <button
+          style={{
+            marginTop: '40px',
+            padding: '18px 42px',
+            backgroundColor: '#7b5a33',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '50px',
+            fontSize: '18px',
+            cursor: 'pointer',
+            boxShadow: '0 10px 30px rgba(0,0,0,0.15)',
+          }}
+        >
+          Explore Collection
+        </button>
       </section>
 
       {/* PRODUCT SHOWCASE */}
-      <section className="px-6 md:px-20 py-14">
-        <div className="grid md:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
-          <div className="bg-white rounded-3xl shadow-2xl p-8 border border-amber-100">
+      <section
+        style={{
+          padding: '90px 20px',
+        }}
+      >
+        <div
+          style={{
+            maxWidth: '1300px',
+            margin: 'auto',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit,minmax(320px,1fr))',
+            gap: '60px',
+            alignItems: 'center',
+          }}
+        >
+          <div>
             <img
-              src="https://images.unsplash.com/photo-1585435557343-3b092031d4f7?q=80&w=1200&auto=format&fit=crop"
-              alt="OM KIND Product"
-              className="rounded-2xl w-full h-[420px] object-cover"
+              src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop"
+              alt="OM KIND"
+              style={{
+                width: '100%',
+                borderRadius: '30px',
+                boxShadow: '0 25px 60px rgba(0,0,0,0.18)',
+              }}
             />
           </div>
 
           <div>
-            <h2 className="text-4xl font-bold text-gray-900">
-              Natural Power & Wellness Support
-            </h2>
-
-            <p className="mt-5 text-lg text-gray-600 leading-relaxed">
-              Designed for modern lifestyle support with a premium herbal blend.
-              Crafted professionally for daily wellness and performance.
+            <p
+              style={{
+                color: '#8b6b3f',
+                letterSpacing: '3px',
+                fontSize: '14px',
+              }}
+            >
+              HERITAGE WELLNESS
             </p>
 
-            <div className="mt-8 grid grid-cols-2 gap-4">
+            <h2
+              style={{
+                fontSize: '52px',
+                marginTop: '20px',
+                color: '#2f2417',
+              }}
+            >
+              Old Money Luxury Meets Ayurveda
+            </h2>
+
+            <p
+              style={{
+                marginTop: '25px',
+                lineHeight: '2',
+                fontSize: '18px',
+                color: '#5a4c3b',
+              }}
+            >
+              OM KIND blends premium herbal traditions with sophisticated
+              wellness aesthetics designed for modern lifestyle support,
+              luxury branding, and natural vitality.
+            </p>
+
+            <div
+              style={{
+                marginTop: '35px',
+                display: 'grid',
+                gridTemplateColumns: 'repeat(2,1fr)',
+                gap: '18px',
+              }}
+            >
               {[
-                'Workout Support',
-                'Daily Energy',
-                'Mind Wellness',
-                'Traditional Formula',
+                'Premium Herbal Blend',
+                'Luxury Wellness',
+                'Performance Support',
+                'Daily Vitality',
               ].map((item) => (
                 <div
                   key={item}
-                  className="bg-amber-100 text-amber-800 p-4 rounded-2xl font-semibold shadow-sm"
+                  style={{
+                    backgroundColor: '#efe3cf',
+                    padding: '18px',
+                    borderRadius: '18px',
+                    textAlign: 'center',
+                    color: '#5c4322',
+                    fontWeight: 'bold',
+                  }}
                 >
                   {item}
                 </div>
@@ -69,33 +166,85 @@ export default function OMKindWebsite() {
       </section>
 
       {/* BENEFITS */}
-      <section className="bg-amber-700 text-white py-16 px-6 md:px-20">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold">Why Choose OM KIND?</h2>
+      <section
+        style={{
+          backgroundColor: '#2f2417',
+          color: '#fff',
+          padding: '90px 20px',
+        }}
+      >
+        <div
+          style={{
+            maxWidth: '1200px',
+            margin: 'auto',
+            textAlign: 'center',
+          }}
+        >
+          <p
+            style={{
+              letterSpacing: '3px',
+              color: '#c7a978',
+            }}
+          >
+            WHY PEOPLE TRUST OM KIND
+          </p>
 
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
+          <h2
+            style={{
+              fontSize: '52px',
+              marginTop: '20px',
+            }}
+          >
+            Premium Ayurvedic Experience
+          </h2>
+
+          <div
+            style={{
+              marginTop: '60px',
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))',
+              gap: '30px',
+            }}
+          >
             {[
               {
-                title: 'Premium Ingredients',
-                desc: 'Traditional herbal ingredients selected with care and quality.',
+                title: 'Luxury Ingredients',
+                desc: 'Selected premium herbal ingredients inspired by traditional Ayurvedic wellness.',
               },
               {
-                title: 'Daily Wellness',
-                desc: 'Supports active lifestyle and regular wellness routine.',
+                title: 'Elegant Branding',
+                desc: 'Designed with refined old money aesthetics and premium healthcare identity.',
               },
               {
-                title: 'Trusted Formula',
-                desc: 'Professionally packed with premium branding and quality standards.',
+                title: 'Modern Wellness',
+                desc: 'Supports active lifestyle, wellness routine, and natural vitality.',
               },
             ].map((card) => (
               <div
                 key={card.title}
-                className="bg-white text-gray-800 rounded-3xl p-8 shadow-2xl"
+                style={{
+                  backgroundColor: '#f8f4ec',
+                  color: '#222',
+                  padding: '40px',
+                  borderRadius: '28px',
+                }}
               >
-                <h3 className="text-2xl font-bold text-amber-700">
+                <h3
+                  style={{
+                    color: '#7b5a33',
+                    fontSize: '28px',
+                  }}
+                >
                   {card.title}
                 </h3>
-                <p className="mt-4 text-gray-600 leading-relaxed">
+
+                <p
+                  style={{
+                    marginTop: '18px',
+                    lineHeight: '1.9',
+                    color: '#555',
+                  }}
+                >
                   {card.desc}
                 </p>
               </div>
@@ -104,64 +253,109 @@ export default function OMKindWebsite() {
         </div>
       </section>
 
-      {/* INGREDIENTS */}
-      <section className="py-16 px-6 md:px-20 bg-white">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900">
-            Premium Herbal Blend
-          </h2>
+      {/* TESTIMONIAL */}
+      <section
+        style={{
+          padding: '90px 20px',
+          textAlign: 'center',
+        }}
+      >
+        <p
+          style={{
+            color: '#8b6b3f',
+            letterSpacing: '3px',
+          }}
+        >
+          WELLNESS PHILOSOPHY
+        </p>
 
-          <p className="mt-5 text-lg text-gray-600">
-            Crafted using traditional wellness ingredients and modern packaging.
-          </p>
+        <h2
+          style={{
+            fontSize: '50px',
+            color: '#2f2417',
+            marginTop: '20px',
+          }}
+        >
+          Crafted For Premium Lifestyle
+        </h2>
 
-          <div className="grid md:grid-cols-4 gap-5 mt-12">
-            {['Honey', 'Herbal Extracts', 'Natural Blend', 'Ayurvedic Support'].map(
-              (item) => (
-                <div
-                  key={item}
-                  className="border border-amber-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition"
-                >
-                  <p className="font-bold text-lg text-amber-700">{item}</p>
-                </div>
-              )
-            )}
-          </div>
-        </div>
+        <p
+          style={{
+            maxWidth: '900px',
+            margin: '35px auto',
+            lineHeight: '2',
+            fontSize: '19px',
+            color: '#5a4c3b',
+          }}
+        >
+          OM KIND represents refined Ayurvedic wellness inspired by heritage,
+          purity, elegance, and modern luxury health branding.
+        </p>
       </section>
 
       {/* CONTACT */}
-      <section className="py-16 px-6 md:px-20 bg-gray-900 text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold">Contact Us</h2>
+      <section
+        style={{
+          backgroundColor: '#efe3cf',
+          padding: '80px 20px',
+        }}
+      >
+        <div
+          style={{
+            maxWidth: '1100px',
+            margin: 'auto',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit,minmax(250px,1fr))',
+            gap: '25px',
+          }}
+        >
+          <div
+            style={{
+              backgroundColor: '#fff',
+              padding: '35px',
+              borderRadius: '24px',
+            }}
+          >
+            <h3 style={{ color: '#7b5a33' }}>WhatsApp</h3>
+            <p style={{ color: '#555' }}>+91 XXXXX XXXXX</p>
+          </div>
 
-          <p className="mt-5 text-gray-300 text-lg">
-            For orders, dealership, and customer support.
-          </p>
+          <div
+            style={{
+              backgroundColor: '#fff',
+              padding: '35px',
+              borderRadius: '24px',
+            }}
+          >
+            <h3 style={{ color: '#7b5a33' }}>Email</h3>
+            <p style={{ color: '#555' }}>support@omkind.com</p>
+          </div>
 
-          <div className="mt-10 grid md:grid-cols-3 gap-6">
-            <div className="bg-gray-800 rounded-2xl p-6">
-              <h3 className="font-bold text-xl">WhatsApp</h3>
-              <p className="mt-2 text-gray-300">+91 XXXXX XXXXX</p>
-            </div>
-
-            <div className="bg-gray-800 rounded-2xl p-6">
-              <h3 className="font-bold text-xl">Email</h3>
-              <p className="mt-2 text-gray-300">support@omkind.com</p>
-            </div>
-
-            <div className="bg-gray-800 rounded-2xl p-6">
-              <h3 className="font-bold text-xl">Manufactured By</h3>
-              <p className="mt-2 text-gray-300">SIDDHAM ENTERPRISES</p>
-            </div>
+          <div
+            style={{
+              backgroundColor: '#fff',
+              padding: '35px',
+              borderRadius: '24px',
+            }}
+          >
+            <h3 style={{ color: '#7b5a33' }}>Manufactured By</h3>
+            <p style={{ color: '#555' }}>SIDDHAM ENTERPRISES</p>
           </div>
         </div>
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-black text-gray-400 text-center py-6 text-sm">
-        © 2026 OM KIND. All Rights Reserved.
+      <footer
+        style={{
+          backgroundColor: '#2f2417',
+          color: '#c9b18d',
+          textAlign: 'center',
+          padding: '30px',
+          letterSpacing: '2px',
+        }}
+      >
+        © 2026 OM KIND — Premium Ayurvedic Wellness
       </footer>
     </div>
-  );
+  )
 }
