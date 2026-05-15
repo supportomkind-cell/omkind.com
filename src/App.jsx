@@ -1,4 +1,4 @@
-export default function OMKindLuxuryWebsite() {
+export default function App() {
   const products = [
     {
       name: 'OM KIND Premium Formula',
